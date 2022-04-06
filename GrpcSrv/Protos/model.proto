@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "GrpcSrv";
+
+service GrpcModels {
+    rpc GetModels(GetModelsRequest) returns (ModelsReply);
+}
+
+message GetModelsRequest {}
+
+message GrpcModel {
+    int32 id = 1;
+    string name = 2;
+}
+
+message ModelsReply {
+    repeated GrpcModel models = 1;
+}

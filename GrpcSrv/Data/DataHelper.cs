@@ -4,7 +4,7 @@ namespace GrpcSrv.Data;
 
 public static class DataHelper
 {
-    public static async Task AddData(IApplicationBuilder app)
+    public static async Task AddData(IApplicationBuilder app, Serilog.ILogger logger)
     {
         using var scopeFactory = app.ApplicationServices.CreateAsyncScope();
         var repository = scopeFactory.ServiceProvider.GetRequiredService<IModelsRepository>()
@@ -18,7 +18,9 @@ public static class DataHelper
             new Model { Id = 5, Name = "Model 5"},
         };
 
+        logger.Information("Populating database");
         repository.AddData(models);
+
         await repository.SaveChangesAsync();
     }
 }

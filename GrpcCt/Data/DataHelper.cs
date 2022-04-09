@@ -9,7 +9,7 @@ public static class DataHelper
         using var scopeFactory = app.ApplicationServices.CreateAsyncScope();
         var repository = scopeFactory.ServiceProvider.GetRequiredService<IModelsRepository>()
             ?? throw new NullReferenceException(nameof(IModelsRepository));
-        var grpcService = scopeFactory.ServiceProvider.GetRequiredService<GrpcModelsService>()
+        var grpcService = scopeFactory.ServiceProvider.GetRequiredService<IGrpcModelsService>()
             ?? throw new NullReferenceException(nameof(GrpcModelsService));
         
         var models = await grpcService.GetData();

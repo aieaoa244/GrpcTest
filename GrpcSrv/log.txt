@@ -1,0 +1,33 @@
+2022-04-09 18:15:42.495 +03:00 [INF] Populating database
+2022-04-09 18:15:42.768 +03:00 [INF] Entity Framework Core 6.0.3 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.3' with options: StoreName=Models 
+2022-04-09 18:15:42.851 +03:00 [INF] Saved 5 entities to in-memory store.
+2022-04-09 18:15:42.911 +03:00 [INF] Now listening on: https://localhost:7000
+2022-04-09 18:15:42.912 +03:00 [INF] Now listening on: http://localhost:5000
+2022-04-09 18:15:42.916 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-09 18:15:42.917 +03:00 [INF] Hosting environment: Development
+2022-04-09 18:15:42.918 +03:00 [INF] Content root path: D:\code\GrpcTest\GrpcSrv\
+2022-04-09 18:15:56.671 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7000/GrpcModels/GetModels application/grpc -
+2022-04-09 18:15:56.691 +03:00 [INF] Executing endpoint 'gRPC - /GrpcModels/GetModels'
+2022-04-09 18:15:56.816 +03:00 [INF] Models grpc endpoint hit
+2022-04-09 18:15:56.818 +03:00 [INF] Retrieving data
+2022-04-09 18:15:56.840 +03:00 [INF] Entity Framework Core 6.0.3 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.3' with options: StoreName=Models 
+2022-04-09 18:15:56.949 +03:00 [INF] Sending grpc reply: 5 items
+2022-04-09 18:15:56.960 +03:00 [INF] Executed endpoint 'gRPC - /GrpcModels/GetModels'
+2022-04-09 18:15:56.964 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7000/GrpcModels/GetModels application/grpc - - 200 - application/grpc 295.8960ms
+2022-04-09 18:16:01.335 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/models - -
+2022-04-09 18:16:01.337 +03:00 [INF] Executing endpoint 'GrpcSrv.Controllers.ModelsController.GetData (GrpcSrv)'
+2022-04-09 18:16:01.346 +03:00 [INF] Route matched with {action = "GetData", controller = "Models"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[GrpcSrv.Models.Model]]] GetData() on controller GrpcSrv.Controllers.ModelsController (GrpcSrv).
+2022-04-09 18:16:01.361 +03:00 [INF] Entity Framework Core 6.0.3 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.3' with options: StoreName=Models 
+2022-04-09 18:16:01.369 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GrpcSrv.Models.Model, GrpcSrv, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-04-09 18:16:01.382 +03:00 [INF] Executed action GrpcSrv.Controllers.ModelsController.GetData (GrpcSrv) in 29.2791ms
+2022-04-09 18:16:01.384 +03:00 [INF] Executed endpoint 'GrpcSrv.Controllers.ModelsController.GetData (GrpcSrv)'
+2022-04-09 18:16:01.385 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/models - - - 200 - application/json;+charset=utf-8 49.4394ms
+2022-04-09 18:17:35.394 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/models - -
+2022-04-09 18:17:35.395 +03:00 [INF] Executing endpoint 'GrpcSrv.Controllers.ModelsController.GetData (GrpcSrv)'
+2022-04-09 18:17:35.396 +03:00 [INF] Route matched with {action = "GetData", controller = "Models"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[GrpcSrv.Models.Model]]] GetData() on controller GrpcSrv.Controllers.ModelsController (GrpcSrv).
+2022-04-09 18:17:35.399 +03:00 [INF] Entity Framework Core 6.0.3 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.3' with options: StoreName=Models 
+2022-04-09 18:17:35.401 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GrpcSrv.Models.Model, GrpcSrv, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-04-09 18:17:35.402 +03:00 [INF] Executed action GrpcSrv.Controllers.ModelsController.GetData (GrpcSrv) in 4.214ms
+2022-04-09 18:17:35.404 +03:00 [INF] Executed endpoint 'GrpcSrv.Controllers.ModelsController.GetData (GrpcSrv)'
+2022-04-09 18:17:35.405 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/models - - - 200 - application/json;+charset=utf-8 11.0477ms
+2022-04-09 18:17:41.268 +03:00 [INF] Application is shutting down...
